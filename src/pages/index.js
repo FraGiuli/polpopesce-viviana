@@ -3,7 +3,10 @@ import Home from "../components/pagesComponents/Home.js";
 
 export default function Index() {
   return (
-    <Layout title="PolpoPesce" metaDescription="Ristorante PolpoPesce a Milano">
+    <Layout
+      title="POLPO"
+      metaDescription="POLPO Semplicemente Pesce - Bar Trattoria Vivace a Milano by Viviana Varese"
+    >
       <Home />
     </Layout>
   );

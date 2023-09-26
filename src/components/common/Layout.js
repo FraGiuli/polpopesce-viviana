@@ -2,7 +2,7 @@ import Head from "next/head";
 import Footer from "./Footer";
 
 export default function Layout({ children, title, metaDescription, page }) {
-  const metaTitle = `${title} - Viviana Varese`;
+  const metaTitle = `${title} - Semplicemente Pesce`;
 
   return (
     <>

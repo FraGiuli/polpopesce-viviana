@@ -164,6 +164,7 @@ export default function Home() {
               tag="a"
               href="https://www.google.com/maps/place/Via+Rocco+Pirri,+19,+96017+Noto+SR/@36.89184,15.069395,16z/data=!4m6!3m5!1s0x131229ae4c539e19:0x2ff4017d09fa1660!8m2!3d36.8918402!4d15.0693954!16s%2Fg%2F11c4kr98hh?ll=36.89184,15.069395&z=16&t=m&hl=it&gl=IT&mapclient=embed&q=Via+Rocco+Pirri,+19+96017+Noto+SR&shorturl=1"
               marginBottom="10px"
+              target="_blank"
             >
               Via Melzo 9, 20129 Milano
             </Text>
