@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Dinot";
-  src: url("/Dinot_Font.otf") format("otf");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
 .nextui-c-hhqfap-kAwfsS-disableShadow-false {
   background: var(--nextui--navbarBlurBackgroundColor);
   backdrop-filter: saturate(180%) blur(var(--nextui--navbarBlur));
@@ -22,166 +14,56 @@
   padding: 20px 8px;
   height: auto;
 }
-.playfair {
-  font-family: "Playfair Display", serif !important;
-}
-
-.roboto {
-  font-family: "Dinot", sans-serif;
-}
 
 .white {
   color: white;
 }
 
 body {
-  font-family: "Dinot", sans-serif;
-  color: #212529;
+  font-family: "Poppins", sans-serif;
+  color: #2f3888;
 }
 
 a {
-  font-family: "Dinot", sans-serif;
   text-decoration: none;
-  color: #ff0286;
+  color: #2f3888;
   font-weight: bold !important;
 }
 
 a:hover {
-  color: #ff0286;
+  color: #2f3888;
   font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover .text-element::before {
+  opacity: 0.8;
+}
+a .text-element {
+  color: #2f3888;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover .text-element {
+  color: #2f3888;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 a.icon-link {
-  color: #212529;
+  color: #2f3888;
   font-size: 24px;
 }
 
 a.navbar-collapse-link {
-  color: #212529;
+  color: #2f3888;
   font-weight: 400 !important;
 }
 a.active,
 button.active {
-  color: #ff0286 !important;
+  color: #2f3888 !important;
   font-weight: bold !important;
-}
-.nextui-dropdown-item {
-  padding: 8px;
-}
-.nextui-c-iWjDFM-ifUdHdz-css {
-  /* Menu dropdowun button mobile */
-  color: #212529;
-  font-weight: 400 !important;
-  font-size: 18px;
-  font-family: "Dinot", sans-serif;
-}
-
-.rainbowbg {
-  background: linear-gradient(
-    90deg,
-    #009fd9 0,
-    #2d2d86 20%,
-    #e6137d 40%,
-    #e82729 60%,
-    #fce627 80%,
-    #00934a 100%
-  ) !important;
-}
-
-a.rainbow-link {
-  color: #212529;
-  background: #ffffff !important;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  padding: 1.1em 0.2em !important;
-  border: none;
-  padding: 0;
-  z-index: 1;
-  height: 60px;
-  font-size: 16px;
-  font-family: "Dinot", sans-serif;
-}
-a.rainbow-link span {
-  background: #ffffff !important;
-  padding: 1.15em 2em !important;
-  border-radius: 10px;
-}
-a.rainbow-link:after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  right: -1px;
-  bottom: -2px;
-  left: -1px;
-  border-radius: 14px;
-  background: linear-gradient(
-    90deg,
-    #009fd9 0%,
-    #2d2d86 20%,
-    #e6137d 40%,
-    #e82729 60%,
-    #fce627 80%,
-    #00934a 100%
-  );
-  z-index: -1;
-}
-
-@keyframes slidebg {
-  to {
-    background-position: 20vw;
-  }
-}
-a.rainbow-link:hover,
-button.rainbow-link:hover,
-div.rainbow-link:hover {
-  text-decoration: none;
-  color: inherit;
-}
-a.rainbow-link:hover:after,
-button.rainbow-link:hover:after,
-div.rainbow-link:hover:after {
-  animation: slidebg 2s linear infinite;
-}
-
-.rainbow-link-inline {
-  background-image: linear-gradient(
-    90deg,
-    #009fd9 0%,
-    #2d2d86 20%,
-    #e6137d 40%,
-    #e82729 60%,
-    #fce627 80%,
-    #00934a 100%
-  );
-  font-size: 18px;
-  font-family: "Dinot", sans-serif;
-  background-clip: text;
-  background-size: 100%;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  text-align: left;
-}
-
-.rainbow-link-inline:hover {
-  animation: slidebg 2s linear infinite;
-}
-.rainbow-link-inline {
-  font-size: 25px !important;
-}
-
-.menu {
-  font-size: 25px !important;
-  border: 3px solid #212529;
-  padding: 12px 24px;
-  border-radius: 14px;
-  display: block;
-  width: 140px;
-}
-
-.menu:hover .rainbow-link-inline {
-  animation: slidebg 2s linear infinite;
 }
 
 /** Slider css **/
@@ -192,59 +74,18 @@ div.rainbow-link:hover:after {
   padding: 8px;
 }
 
-/** Card menu **/
-
-.card-menu.boxes {
-  border-radius: 6.5%;
-  width: 550px;
-}
-
-.noActiveLink {
-  color: #212529;
-}
-.activeLink {
-  color: #ff0286;
-}
-
-/* .nextui-dropdown-item {
-  padding: 0px;
-} */
-
-.mappa {
-  min-height: 350px;
-}
-
-/** box-contatti */
-
-.box-contatti {
-  border-radius: 14px;
-}
-
 /** Bottoni per i menu */
-
-.menu-buttons-inline {
-  font-size: 22px !important;
-  border: 2px solid #ff0286;
-  padding: 12px 24px;
-  border-radius: 14px;
-  display: block;
-  text-align: center;
-  width: 200px;
-}
-
-.menu-buttons-inline:hover {
-  font-size: 22px !important;
-  border: 2px solid #212529;
-  padding: 12px 24px;
-  border-radius: 14px;
-  display: block;
-  text-align: center;
-  width: 200px;
-  color: #212529;
-}
 
 @media (min-width: 960px) {
   .bordo-laterale {
     border-right: 1px solid grey;
   }
+}
+
+.backgroundline {
+  background-color: #2f3888;
+}
+
+a:hover.icon-ista {
+  opacity: 0.5;
 }

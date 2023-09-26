@@ -1,103 +1,215 @@
-import { useSelector } from "react-redux";
-import { CONTENT, SLIDER } from "../../constants/Content";
-
+import Image from "next/image";
+import { SLIDER } from "../../constants/Content";
 import Hero from "../common/Hero";
 import Slider from "../common/Slider";
-import TextViva from "../common/TextViva";
-import Contacts from "../common/Contacts";
+import StrikeThrough from "../common/StrikeThrough/StrikeThrough";
+import Text from "../common/Text/Text";
 
 export default function Home() {
-  const selectedLanguage = useSelector(
-    (state) => state.language.selectedLanguage
-  );
-  const Content = selectedLanguage === "en" ? CONTENT.en : CONTENT.it;
-
   return (
     <>
       <div>
         <Hero
-          src="/img/bistrot-interno.jpg"
-          borderBottomColor="#ba8a76"
-          srcLogo="/img/logo-bistrot-4.png"
+          src="/polpopesce_slider.jpg"
+          borderBottomColor="#2f3888"
+          srcLogo="/polpo_logo_white-payoff.png"
         />
-        <div className="mx-auto mt-0 lg:mt-32" style={{ maxWidth: "1528px" }}>
+        <div className="mx-auto" style={{ maxWidth: "1528px" }}>
           <div
-            className="flex flex-col items-center justify-center px-[16px] mb-16 mx-auto mt-16 md:mt-32"
+            className="flex flex-col items-center justify-center px-[16px] mx-auto mt-32 mb-8"
             style={{ maxWidth: "1000px" }}
           >
-            <TextViva className="text-3xl playfair leading-relaxed text-center mb-4 font-medium">
-              {Content.bodyhead}
-            </TextViva>
-
-            <TextViva className="text-lg leading-relaxed text-center mb-8">
-              {Content.body}
-            </TextViva>
+            <StrikeThrough
+              className="mb-8"
+              fontSize="20px"
+              textTransform="uppercase"
+              matrixValue="-1.1, -0.02, -0.3, 2, 0, 0"
+            >
+              Sul lungomare di Via Melzo 9
+            </StrikeThrough>
+            <Text
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              tag="h1"
+              fontSize="40px"
+              fontWeight="bold"
+              textAlign="center"
+              marginBottom="30px"
+            >
+              A Milano apre POLPO <br></br> Semplicemente Pesce, Bar Trattoria
+              Vivace.
+            </Text>
+            <div className="flex flex-col">
+              <Text marginBottom="14px" lineHeight="1.4" fontWeight="bold">
+                Viviana Varese si ispira alla trattoria anni ’80 per dare vita a
+                un locale dinamico e contemporaneo, in cui è il pesce ad essere
+                protagonista.
+              </Text>
+              <Text lineHeight="1.4" marginBottom="14px">
+                POLPO svela una doppia anima dividendosi fra bar, in cui le
+                tapas accompagnano il momento dell’aperitivo, e trattoria con
+                pochi ingredienti di qualità crudi e combinati a diverse cotture
+                che compongono un menu, espressione di una cucina semplice e
+                autentica con materie prime di alta qualità.
+              </Text>
+              <Text lineHeight="1.4">**In cucina**: Valentina Gaeta</Text>
+              <Text lineHeight="1.4" marginBottom="14px">
+                **In sala**: Davide Gianni, Valeria Lorusso, Martina Guercia
+              </Text>
+              <Text lineHeight="1.4" marginBottom="14px">
+                Sfumature di blu disegnano i suoi interni, a ricordare il mare
+                anche alla vista: così che ogni senso possa condurre a
+                un’atmosfera marittima e retrò. Come tutti i ristoranti di
+                Viviana Varese, POLPO vuole infatti essere un luogo, dove cucina
+                e ambiente, fra design e arredi, comunicano all’unisono. POLPO
+                prende il posto di Spica, progetto di cucina fusion che la chef
+                stellata Viviana Varese aveva intrapreso con la socia e chef
+                indiana Ritu Dalmia nel 2019, e che oggi vede una continuità
+                progettuale proprio con un bar trattoria dal carattere moderno e
+                democratico.
+              </Text>
+              <Text lineHeight="1.4">
+                **Cantina**: a cura di Alessandro Limongelli e Martina Guercia
+                POLPO ha una carta dei vini “mediterranea”, specialmente
+                italiana con Sicilia e Campania protagoniste, grande spazio alle
+                bollicine, predilige piccoli produttori con un occhio curioso
+                anche al biologico e al naturale accanto però a grandi e
+                rinomate cantine. Tra i vini al calice una selezione da nord a
+                sud e alcune etichette di Vermouth per “meditare” insieme alle
+                tapas.
+              </Text>
+            </div>
           </div>
-          <div className="w-full md:w-4/6 mb-8 mx-auto">
+          {/* <div className="w-full md:w-4/6 mb-8 mx-auto">
             <Slider images={SLIDER} />
-          </div>
+          </div> */}
           <div
-            className="flex flex-col items-center justify-center px-[16px] mb-16 mx-auto mt-16 md:mt-32"
+            className="flex gap-[20px] items-center justify-center mx-auto px-[16px] mb-8"
             style={{ maxWidth: "1000px" }}
           >
-            <TextViva className="text-lg leading-relaxed text-center mb-8">
-              {Content.body2}
-            </TextViva>
-            <div key={Content.menu.label} className="text-center mb-[56px]">
-              <a
-                href={Content.menu.pdf}
-                target="_blank"
-                className="menu-buttons-inline"
+            <a
+              href="/POLPO_MENU_TAPAS_web.pdf"
+              target="_blank"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <StrikeThrough
+                fontSize="20px"
+                textTransform="uppercase"
+                linetheme="highlight"
+                matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
               >
-                <span>{Content.menu.label}</span>
+                <span>Tapas Menu</span>
+              </StrikeThrough>
+            </a>
+            <a
+              href="/POLPO_MENU_trattoria_web.pdf"
+              target="_blank"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <StrikeThrough
+                fontSize="20px"
+                textTransform="uppercase"
+                linetheme="highlight"
+                matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
+              >
+                <span>Menu trattoria</span>
+              </StrikeThrough>
+            </a>
+          </div>
+          <div
+            className="flex flex-col items-center justify-center px-[16px] mb-8 mx-auto"
+            style={{ maxWidth: "1000px" }}
+          >
+            <Text className="text-lg leading-relaxed text-center mb-8">
+              Concept, creative & art direction and content | Almagreal Nuovo
+              Look a cura di B-Arch | Architettura Sabrina Bignami / Alessandro
+              Capellari
+            </Text>
+          </div>
+        </div>
+        <img
+          src="/sfondo-polpo.jpg"
+          alt="sfondo-pesce"
+          width="100%"
+          className="py-8"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        />
+        <div className="mx-auto mt-8" style={{ maxWidth: "1528px" }}>
+          <div
+            className="flex flex-col items-center justify-center px-[16px] mb-16 mx-auto"
+            style={{ maxWidth: "1000px" }}
+          >
+            <Text
+              tag="h2"
+              textTransform="uppercase"
+              fontSize="30px"
+              fontWeight="bold"
+              marginBottom="10px"
+            >
+              Contatti
+            </Text>
+            <Text>POLPO Semplicemente Pesce - Bar Trattoria Vivace</Text>
+            <img
+              src="/Pesce-giallo.png"
+              alt="pesce"
+              className="py-8"
+              style={{ maxWidth: "200px", margin: 0 }}
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+            <Text
+              tag="a"
+              href="https://www.google.com/maps/place/Via+Rocco+Pirri,+19,+96017+Noto+SR/@36.89184,15.069395,16z/data=!4m6!3m5!1s0x131229ae4c539e19:0x2ff4017d09fa1660!8m2!3d36.8918402!4d15.0693954!16s%2Fg%2F11c4kr98hh?ll=36.89184,15.069395&z=16&t=m&hl=it&gl=IT&mapclient=embed&q=Via+Rocco+Pirri,+19+96017+Noto+SR&shorturl=1"
+              marginBottom="10px"
+            >
+              Via Melzo 9, 20129 Milano
+            </Text>
+            <Text marginBottom="10px">
+              tel: <a href="tel:+390284572974">+39 02 84572974</a> /{" "}
+              <a href="tel:+393423926392">+39 3423926392 </a>
+            </Text>
+            <Text tag="a" href="mailto:info@polpopesce.it" marginBottom="40px">
+              info@polpopesce.it
+            </Text>
+            <Text lineHeight="1.4" marginBottom="20px" textAlign="center">
+              Aperto dal martedì alla domenica dalle{" "}
+              <strong>18.00 alle 24.00</strong>
+              <br></br>
+              Sabato a domenica anche a pranzo dalle{" "}
+              <strong>12.00 alle 15.00</strong>
+              <br></br>Chiuso il lunedì
+              <br></br>
+              <br></br>
+              Si accettano prenotazioni solo per il pranzo e la cena (non per
+              l’aperitivo).
+            </Text>
+            <div className="flex gap-[8px] items-center justify-center">
+              <Text
+                lineHeight="1.4"
+                fontWeight="bold"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                Seguici su
+              </Text>
+              <a
+                href="https://www.instagram.com/polpopesce/"
+                target="_blank"
+                className="icon-ista"
+              >
+                <img
+                  src="/instagram-icon.png"
+                  alt="instagram"
+                  width="30px"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                />
               </a>
             </div>
-            <TextViva className="text-lg leading-relaxed text-center mb-8 lg:mb-16">
-              {Content.body3}
-            </TextViva>
-
-            <div
-              className="flex flex-wrap gap-8 md:gap-16 justify-center mb-8 lg:mb-16"
-              style={{ width: "100%" }}
-            >
-              {Content.menus.length > 0 &&
-                Content.menus.map((el) => (
-                  <div key={el.label} className="text-center">
-                    <a
-                      href={el.pdf}
-                      target="_blank"
-                      className="menu-buttons-inline"
-                    >
-                      <span>{el.label}</span>
-                    </a>
-                  </div>
-                ))}
-            </div>
           </div>
-
-          <Contacts
-            className="mb-16 lg:mb-32"
-            title={Content.contatti.title}
-            name={Content.contatti.name}
-            address={Content.contatti.address}
-            linkMap="https://goo.gl/maps/PJJFTFfkhusi7NUx6"
-            fb="/"
-            insta="/"
-            color="#ba8a76"
-            seeMap={Content.contatti.seeMap}
-            prenotaButton={Content.prenota}
-            prenotaTitle={Content.prenotaTitle}
-            prenotaSubtitle={Content.prenotaSubtitle}
-            prenotaLink={Content.prenotaLink}
-          >
-            <TextViva className="text-lg">{Content.contatti.tel}</TextViva>
-            <TextViva className="pb-4 text-lg">
-              {Content.contatti.mail}
-            </TextViva>
-            <TextViva className="pb-4 text-lg">
-              {Content.contatti.orari}
-            </TextViva>
-          </Contacts>
         </div>
       </div>
     </>
