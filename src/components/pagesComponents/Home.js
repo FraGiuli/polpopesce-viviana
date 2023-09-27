@@ -44,8 +44,8 @@ export default function Home() {
               textAlign="center"
               marginBottom="30px"
             >
-              A Milano apre POLPO <br></br> Semplicemente Pesce, Bar Trattoria
-              Vivace.
+              A Milano apre POLPO Semplicemente Pesce <br></br> Bar Trattoria
+              Vivace by SPICA
             </Text>
             <div className="flex flex-col">
               <Text marginBottom="14px" lineHeight="1.4" fontWeight="bold">
@@ -98,7 +98,7 @@ export default function Home() {
             <a
               href="/POLPO_MENU_TAPAS_web.pdf"
               target="_blank"
-              data-aos="fade-right"
+              data-aos="fade-down"
               data-aos-duration="1000"
             >
               <StrikeThrough
@@ -113,7 +113,7 @@ export default function Home() {
             <a
               href="/POLPO_MENU_trattoria_web.pdf"
               target="_blank"
-              data-aos="fade-left"
+              data-aos="fade-down"
               data-aos-duration="1000"
             >
               <StrikeThrough
@@ -125,15 +125,30 @@ export default function Home() {
                 <span>Menu trattoria</span>
               </StrikeThrough>
             </a>
+            <a
+              href="/POLPO_carta dei_vini_digital_LOW.pdf"
+              target="_blank"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <StrikeThrough
+                fontSize="20px"
+                textTransform="uppercase"
+                linetheme="highlight"
+                matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
+              >
+                <span>Carta Vini</span>
+              </StrikeThrough>
+            </a>
           </div>
           <div
             className="flex flex-col items-center justify-center px-[16px] mb-8 mx-auto"
             style={{ maxWidth: "1000px" }}
           >
             <Text className="text-lg leading-relaxed text-center mb-8">
-              Concept, creative & art direction and content | Almagreal Nuovo
-              Look a cura di B-Arch | Architettura Sabrina Bignami / Alessandro
-              Capellari
+              Concept, creative & art direction and content | Almagreal<br></br>
+              New Look a cura di B-Arch | Architettura Sabrina Bignami /
+              Alessandro Capellaro
             </Text>
           </div>
         </div>
@@ -163,7 +178,8 @@ export default function Home() {
               Contatti
             </Text>
             <Text textAlign="center">
-              POLPO Semplicemente Pesce - Bar Trattoria Vivace
+              POLPO Semplicemente Pesce - Bar Trattoria Vivace<br></br>
+              by SPICA
             </Text>
             <img
               src="/Pesce-giallo.png"
@@ -192,7 +208,7 @@ export default function Home() {
               Aperto dal martedì alla domenica dalle{" "}
               <strong>18.00 alle 24.00</strong>
               <br></br>
-              Sabato a domenica anche a pranzo dalle{" "}
+              Sabato e domenica anche a pranzo dalle{" "}
               <strong>12.00 alle 15.00</strong>
               <br></br>Chiuso il lunedì
               <br></br>
