@@ -4,8 +4,16 @@ import Hero from "../common/Hero";
 import Slider from "../common/Slider";
 import StrikeThrough from "../common/StrikeThrough/StrikeThrough";
 import Text from "../common/Text/Text";
+import { Modal } from "@nextui-org/react";
+import { useState } from "react";
 
 export default function Home() {
+  const [visible, setVisible] = useState(false);
+  const handler = () => setVisible(true);
+
+  const closeHandler = () => {
+    setVisible(false);
+  };
   return (
     <>
       <div>
@@ -16,7 +24,7 @@ export default function Home() {
         />
         <div className="mx-auto" style={{ maxWidth: "1528px" }}>
           <div
-            className="flex flex-col items-center justify-center px-[16px] mx-auto mt-32 mb-8"
+            className="flex flex-col items-center justify-center px-[16px] mx-auto md:mt-32 mt-16 mb-8"
             style={{ maxWidth: "1000px" }}
           >
             <StrikeThrough
@@ -31,7 +39,7 @@ export default function Home() {
               data-aos="fade-down"
               data-aos-duration="1000"
               tag="h1"
-              fontSize="40px"
+              fontSize="38px"
               fontWeight="bold"
               textAlign="center"
               marginBottom="30px"
@@ -84,7 +92,7 @@ export default function Home() {
             <Slider images={SLIDER} />
           </div> */}
           <div
-            className="flex gap-[20px] items-center justify-center mx-auto px-[16px] mb-8"
+            className="flex gap-[20px] flex-col md:flex-row items-center justify-center mx-auto px-[16px] mb-8"
             style={{ maxWidth: "1000px" }}
           >
             <a
@@ -129,14 +137,17 @@ export default function Home() {
             </Text>
           </div>
         </div>
-        <img
-          src="/sfondo-polpo.jpg"
-          alt="sfondo-pesce"
-          width="100%"
-          className="py-8"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-        />
+        <div
+          style={{
+            width: "100%",
+            minHeight: "100px",
+            backgroundImage: `url(/sfondo-polpo.jpg)`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            position: "relative",
+            backgroundPosition: "center",
+          }}
+        ></div>
         <div className="mx-auto mt-8" style={{ maxWidth: "1528px" }}>
           <div
             className="flex flex-col items-center justify-center px-[16px] mb-16 mx-auto"
@@ -151,14 +162,16 @@ export default function Home() {
             >
               Contatti
             </Text>
-            <Text>POLPO Semplicemente Pesce - Bar Trattoria Vivace</Text>
+            <Text textAlign="center">
+              POLPO Semplicemente Pesce - Bar Trattoria Vivace
+            </Text>
             <img
               src="/Pesce-giallo.png"
               alt="pesce"
               className="py-8"
-              style={{ maxWidth: "200px", margin: 0 }}
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="1000"
+              width="200px"
             />
             <Text
               tag="a"
@@ -187,6 +200,22 @@ export default function Home() {
               Si accettano prenotazioni solo per il pranzo e la cena (non per
               l’aperitivo).
             </Text>
+            <a
+              onClick={handler}
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              className="mb-8"
+            >
+              <StrikeThrough
+                fontSize="20px"
+                textTransform="uppercase"
+                linetheme="highlight"
+                matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
+              >
+                <span>Prenota</span>
+              </StrikeThrough>
+            </a>
+
             <div className="flex gap-[8px] items-center justify-center">
               <Text
                 lineHeight="1.4"
@@ -210,6 +239,27 @@ export default function Home() {
                 />
               </a>
             </div>
+            <Modal
+              closeButton
+              aria-labelledby="modal-title"
+              open={visible}
+              onClose={closeHandler}
+              width="500px"
+            >
+              <Modal.Body>
+                <div align="center">
+                  <iframe
+                    src="https://widget.thefork.com/7fd41234-91ea-4cb9-8197-9129e6614c18"
+                    style={{
+                      width: "100%",
+                      minHeight: "500px",
+                      border: "none",
+                      scrolling: "yes",
+                    }}
+                  ></iframe>
+                </div>
+              </Modal.Body>
+            </Modal>
           </div>
         </div>
       </div>

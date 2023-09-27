@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.nextui-c-hhqfap-kAwfsS-disableShadow-false {
-  background: var(--nextui--navbarBlurBackgroundColor);
-  backdrop-filter: saturate(180%) blur(var(--nextui--navbarBlur));
-}
-
-.nextui-c-hhqfap-gqZKcP-disableBlur-false .nextui-c-egxOLa {
-  background: none;
-  backdrop-filter: none;
-  max-width: 1528px;
-  padding: 20px 8px;
-  height: auto;
-}
-
 .white {
   color: white;
 }
@@ -88,4 +75,9 @@ button.active {
 
 a:hover.icon-ista {
   opacity: 0.5;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px !important;
+  }
 }
