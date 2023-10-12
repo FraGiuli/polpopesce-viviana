@@ -51,7 +51,7 @@ export default function Hero({
           <Image
             src={`${srcLogo}`}
             alt="logo"
-            className="pt-16"
+            className="pt-8"
             style={{ maxWidth: width, margin: 0 }}
           />
         )}

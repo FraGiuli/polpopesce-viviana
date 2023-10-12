@@ -20,7 +20,7 @@ export default function Home() {
         <Hero
           src="/polpopesce_slider.jpg"
           borderBottomColor="#2f3888"
-          srcLogo="/polpo_logo_white-payoff.png"
+          srcLogo="/logo-polpo-byspica.png"
         />
         <div className="mx-auto" style={{ maxWidth: "1528px" }}>
           <div
