@@ -205,11 +205,11 @@ export default function Home() {
               info@polpopesce.it
             </Text>
             <Text lineHeight="1.4" marginBottom="20px" textAlign="center">
-              Aperto dal martedì alla domenica dalle{" "}
+              Aperto dal martedì al venerdì dalle{" "}
               <strong>18.00 alle 24.00</strong>
               <br></br>
-              Sabato e domenica anche a pranzo dalle{" "}
-              <strong>12.00 alle 15.00</strong>
+              Sabato e domenica dalle <strong> 12.00 alle 15.00 </strong>e dalle{" "}
+              <strong> 19.00 alle 24.00</strong>
               <br></br>Chiuso il lunedì
               <br></br>
               <br></br>
