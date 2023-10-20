@@ -64,18 +64,39 @@ export default function Home() {
               <Text lineHeight="1.4" marginBottom="14px">
                 **In sala**: Davide Gianni, Valeria Lorusso, Martina Guercia
               </Text>
-              <Text lineHeight="1.4" marginBottom="14px">
-                Sfumature di blu disegnano i suoi interni, a ricordare il mare
-                anche alla vista: così che ogni senso possa condurre a
-                un’atmosfera marittima e retrò. Come tutti i ristoranti di
-                Viviana Varese, POLPO vuole infatti essere un luogo, dove cucina
-                e ambiente, fra design e arredi, comunicano all’unisono. POLPO
-                prende il posto di Spica, progetto di cucina fusion che la chef
-                stellata Viviana Varese aveva intrapreso con la socia e chef
-                indiana Ritu Dalmia nel 2019, e che oggi vede una continuità
-                progettuale proprio con un bar trattoria dal carattere moderno e
-                democratico.
-              </Text>
+              <div className="flex flex-col md:flex-row gap-[24px] items-center">
+                <Text
+                  lineHeight="1.4"
+                  marginBottom="14px"
+                  className="md:w-[50%] mb-8"
+                >
+                  Sfumature di blu disegnano i suoi interni, a ricordare il mare
+                  anche alla vista: così che ogni senso possa condurre a
+                  un’atmosfera marittima e retrò. Come tutti i ristoranti di
+                  Viviana Varese, POLPO vuole infatti essere un luogo, dove
+                  cucina e ambiente, fra design e arredi, comunicano
+                  all’unisono. POLPO prende il posto di Spica, progetto di
+                  cucina fusion che la chef stellata Viviana Varese aveva
+                  intrapreso con la socia e chef indiana Ritu Dalmia nel 2019, e
+                  che oggi vede una continuità progettuale proprio con un bar
+                  trattoria dal carattere moderno e democratico.
+                </Text>
+                <img
+                  src="ritu-viviana.jpg"
+                  alt="Ritu-Viviana"
+                  className="md:w-[50%]  mb-8"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:w-3/6 mb-8 mx-auto">
+            <Slider images={SLIDER} />
+          </div>
+          <div
+            className="flex flex-col items-center justify-center px-[16px] mx-auto md:mt-16 mt-8 mb-8"
+            style={{ maxWidth: "1000px" }}
+          >
+            <div className="flex flex-col">
               <Text lineHeight="1.4">
                 **Cantina**: a cura di Alessandro Limongelli e Martina Guercia
                 POLPO ha una carta dei vini “mediterranea”, specialmente
@@ -88,11 +109,8 @@ export default function Home() {
               </Text>
             </div>
           </div>
-          {/* <div className="w-full md:w-4/6 mb-8 mx-auto">
-            <Slider images={SLIDER} />
-          </div> */}
           <div
-            className="flex gap-[20px] flex-col md:flex-row items-center justify-center mx-auto px-[16px] mb-8"
+            className="flex gap-[20px] flex-col md:flex-row items-center justify-center mx-auto px-[16px] mb-16"
             style={{ maxWidth: "1000px" }}
           >
             <a
@@ -141,6 +159,11 @@ export default function Home() {
               </StrikeThrough>
             </a>
           </div>
+          <img
+            src="composizione-polpo.jpg"
+            alt="welcome"
+            className="mx-auto w-full md:w-4/6 mb-8"
+          />
           <div
             className="flex flex-col items-center justify-center px-[16px] mb-8 mx-auto"
             style={{ maxWidth: "1000px" }}
