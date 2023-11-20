@@ -160,7 +160,7 @@ export default function Home() {
             </a>
           </div>
           <img
-            src="composizione-polpo.jpg"
+            src="entrata.jpg"
             alt="welcome"
             className="mx-auto w-full md:w-4/6 mb-8"
           />
@@ -222,7 +222,7 @@ export default function Home() {
             </Text>
             <Text marginBottom="10px">
               tel: <a href="tel:+390284572974">+39 02 84572974</a> /{" "}
-              <a href="tel:+393423926392">+39 3423926392 </a>
+              <a href="tel:+393423926392">+39 342 3926392 </a>
             </Text>
             <Text tag="a" href="mailto:info@polpopesce.it" marginBottom="40px">
               info@polpopesce.it
