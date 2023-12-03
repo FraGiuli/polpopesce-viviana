@@ -65,22 +65,42 @@ export default function Home() {
                 **In sala**: Davide Gianni, Valeria Lorusso, Martina Guercia
               </Text>
               <div className="flex flex-col md:flex-row gap-[24px] items-center">
-                <Text
-                  lineHeight="1.4"
-                  marginBottom="14px"
-                  className="md:w-[50%] mb-8"
-                >
-                  Sfumature di blu disegnano i suoi interni, a ricordare il mare
-                  anche alla vista: così che ogni senso possa condurre a
-                  un’atmosfera marittima e retrò. Come tutti i ristoranti di
-                  Viviana Varese, POLPO vuole infatti essere un luogo, dove
-                  cucina e ambiente, fra design e arredi, comunicano
-                  all’unisono. POLPO prende il posto di Spica, progetto di
-                  cucina fusion che la chef stellata Viviana Varese aveva
-                  intrapreso con la socia e chef indiana Ritu Dalmia nel 2019, e
-                  che oggi vede una continuità progettuale proprio con un bar
-                  trattoria dal carattere moderno e democratico.
-                </Text>
+                <div>
+                  <Text
+                    lineHeight="1.4"
+                    marginBottom="14px"
+                    className="md:w-[50%]"
+                  >
+                    Sfumature di blu disegnano i suoi interni, a ricordare il
+                    mare anche alla vista: così che ogni senso possa condurre a
+                    un’atmosfera marittima e retrò. Come tutti i ristoranti di
+                    Viviana Varese, POLPO vuole infatti essere un luogo, dove
+                    cucina e ambiente, fra design e arredi, comunicano
+                    all’unisono. POLPO prende il posto di Spica, progetto di
+                    cucina fusion che la chef stellata Viviana Varese aveva
+                    intrapreso con la socia e chef indiana Ritu Dalmia nel 2019,
+                    e che oggi vede una continuità progettuale proprio con un
+                    bar trattoria dal carattere moderno e democratico.
+                  </Text>
+                  <div className="mt-4">
+                    <a
+                      href="/Catalogo_Natale_2023.pdf"
+                      target="_blank"
+                      data-aos="fade-down"
+                      data-aos-duration="1000"
+                    >
+                      <StrikeThrough
+                        fontSize="20px"
+                        textTransform="uppercase"
+                        linetheme="highlight"
+                        matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
+                      >
+                        <span>Scopri il Catalogo di Natale</span>
+                      </StrikeThrough>
+                    </a>
+                  </div>
+                </div>
+
                 <img
                   src="ritu-viviana.jpg"
                   alt="Ritu-Viviana"
