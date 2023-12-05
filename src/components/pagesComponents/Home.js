@@ -164,7 +164,7 @@ export default function Home() {
               </StrikeThrough>
             </a>
             <a
-              href="/POLPO_carta dei_vini_digital_LOW.pdf"
+              href="/11_28_carta_dei_Vini POLPO.pdf"
               target="_blank"
               data-aos="fade-down"
               data-aos-duration="1000"
