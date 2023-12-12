@@ -64,7 +64,60 @@ export default function Home() {
               <Text lineHeight="1.4" marginBottom="14px">
                 **In sala**: Davide Gianni, Valeria Lorusso, Martina Guercia
               </Text>
-              <div className="flex flex-col md:flex-row gap-[24px] items-center">
+              <div
+                className="flex gap-[20px] flex-col md:flex-row items-center justify-center mx-auto px-[16px] mb-8"
+                style={{ maxWidth: "1000px" }}
+              >
+                <a
+                  href="/POLPO_MENU_TAPAS_web.pdf"
+                  target="_blank"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
+                  <StrikeThrough
+                    fontSize="20px"
+                    textTransform="uppercase"
+                    linetheme="highlight"
+                    matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
+                  >
+                    <span>Tapas Menu</span>
+                  </StrikeThrough>
+                </a>
+                <a
+                  href="/POLPO_MENU_trattoria_web.pdf"
+                  target="_blank"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
+                  <StrikeThrough
+                    fontSize="20px"
+                    textTransform="uppercase"
+                    linetheme="highlight"
+                    matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
+                  >
+                    <span>Menu trattoria</span>
+                  </StrikeThrough>
+                </a>
+              </div>
+              <div className="text-center mb-16">
+                <a
+                  onClick={handler}
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  className="mb-8"
+                >
+                  <StrikeThrough
+                    fontSize="20px"
+                    textTransform="uppercase"
+                    linetheme="highlight"
+                    matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
+                  >
+                    <span>Prenota</span>
+                  </StrikeThrough>
+                </a>
+              </div>
+
+              <div className="flex flex-col md:flex-row gap-[24px]">
                 <div>
                   <Text
                     lineHeight="1.4"
@@ -133,36 +186,6 @@ export default function Home() {
             className="flex gap-[20px] flex-col md:flex-row items-center justify-center mx-auto px-[16px] mb-16"
             style={{ maxWidth: "1000px" }}
           >
-            <a
-              href="/POLPO_MENU_TAPAS_web.pdf"
-              target="_blank"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              <StrikeThrough
-                fontSize="20px"
-                textTransform="uppercase"
-                linetheme="highlight"
-                matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
-              >
-                <span>Tapas Menu</span>
-              </StrikeThrough>
-            </a>
-            <a
-              href="/POLPO_MENU_trattoria_web.pdf"
-              target="_blank"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              <StrikeThrough
-                fontSize="20px"
-                textTransform="uppercase"
-                linetheme="highlight"
-                matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
-              >
-                <span>Menu trattoria</span>
-              </StrikeThrough>
-            </a>
             <a
               href="/11_28_carta_dei_Vini POLPO.pdf"
               target="_blank"
