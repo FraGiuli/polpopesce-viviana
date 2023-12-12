@@ -33,7 +33,7 @@ export default function Home() {
               textTransform="uppercase"
               matrixValue="-1.1, -0.02, -0.3, 2, 0, 0"
             >
-              Sul lungomare di Via Melzo 9
+              Sul lungomare di Via Melzo 9 Milano
             </StrikeThrough>
             <Text
               data-aos="fade-down"
@@ -44,8 +44,7 @@ export default function Home() {
               textAlign="center"
               marginBottom="30px"
             >
-              A Milano apre POLPO Semplicemente Pesce <br></br> Bar Trattoria
-              Vivace by SPICA
+              POLPO Semplicemente Pesce <br></br> Bar Trattoria Vivace by SPICA
             </Text>
             <div className="flex flex-col">
               <Text marginBottom="14px" lineHeight="1.4" fontWeight="bold">
