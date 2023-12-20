@@ -97,6 +97,21 @@ export default function Home() {
                     <span>Menu trattoria</span>
                   </StrikeThrough>
                 </a>
+                <a
+                  href="/Menu_San_Silvestro_Polpo_2023.pdf"
+                  target="_blank"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
+                  <StrikeThrough
+                    fontSize="20px"
+                    textTransform="uppercase"
+                    linetheme="highlight"
+                    matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
+                  >
+                    <span>Menu San Silvestro</span>
+                  </StrikeThrough>
+                </a>
               </div>
               <div className="text-center mb-16">
                 <a
