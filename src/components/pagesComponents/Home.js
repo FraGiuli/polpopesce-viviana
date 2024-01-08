@@ -134,23 +134,6 @@ export default function Home() {
                     e che oggi vede una continuità progettuale proprio con un
                     bar trattoria dal carattere moderno e democratico.
                   </Text>
-                  <div className="mt-4">
-                    <a
-                      href="/Catalogo_Natale_2023.pdf"
-                      target="_blank"
-                      data-aos="fade-down"
-                      data-aos-duration="1000"
-                    >
-                      <StrikeThrough
-                        fontSize="20px"
-                        textTransform="uppercase"
-                        linetheme="highlight"
-                        matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
-                      >
-                        <span>Scopri il Catalogo di Natale</span>
-                      </StrikeThrough>
-                    </a>
-                  </div>
                 </div>
 
                 <img
