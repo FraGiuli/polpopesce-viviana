@@ -83,7 +83,7 @@ export default function Home() {
                   </StrikeThrough>
                 </a>
                 <a
-                  href="/POLPO_MENU_trattoria_web.pdf"
+                  href="/menu_01_2024.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
@@ -169,7 +169,7 @@ export default function Home() {
             style={{ maxWidth: "1000px" }}
           >
             <a
-              href="/11_28_carta_dei_Vini POLPO.pdf"
+              href="/carta_vini_01_2024.pdf"
               target="_blank"
               data-aos="fade-down"
               data-aos-duration="1000"
