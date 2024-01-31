@@ -100,7 +100,9 @@ export default function Home() {
               </div>
               <div className="text-center mb-16">
                 <a
-                  onClick={handler}
+                  // onClick={handler}
+                  href="https://polposemplicementepesce.superbexperience.com/"
+                  target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
                   className="mb-8"
@@ -265,7 +267,9 @@ export default function Home() {
               l’aperitivo).
             </Text>
             <a
-              onClick={handler}
+              // onClick={handler}
+              href="https://polposemplicementepesce.superbexperience.com/"
+              target="_blank"
               data-aos="fade-down"
               data-aos-duration="1000"
               className="mb-8"
