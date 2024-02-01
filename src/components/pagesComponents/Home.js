@@ -136,6 +136,24 @@ export default function Home() {
                     e che oggi vede una continuità progettuale proprio con un
                     bar trattoria dal carattere moderno e democratico.
                   </Text>
+                  <div className="text-center mt-8 mb-16">
+                    <a
+                      href="https://giftcard.superbexperience.com/polposemplicementepesce/"
+                      target="_blank"
+                      data-aos="fade-down"
+                      data-aos-duration="1000"
+                      className="mb-8"
+                    >
+                      <StrikeThrough
+                        fontSize="20px"
+                        textTransform="uppercase"
+                        linetheme="highlight"
+                        matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
+                      >
+                        <span>Buono Regalo</span>
+                      </StrikeThrough>
+                    </a>
+                  </div>
                 </div>
 
                 <img
