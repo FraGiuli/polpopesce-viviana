@@ -59,10 +59,7 @@ export default function Home() {
                 che compongono un menu, espressione di una cucina semplice e
                 autentica con materie prime di alta qualità.
               </Text>
-              <Text lineHeight="1.4">**In cucina**: Valentina Gaeta</Text>
-              <Text lineHeight="1.4" marginBottom="14px">
-                **In sala**: Davide Gianni, Valeria Lorusso, Martina Guercia
-              </Text>
+
               <div
                 className="flex gap-[20px] flex-col md:flex-row items-center justify-center mx-auto px-[16px] mb-8"
                 style={{ maxWidth: "1000px" }}
@@ -184,31 +181,11 @@ export default function Home() {
               </Text>
             </div>
           </div>
-          <div
-            className="flex gap-[20px] flex-col md:flex-row items-center justify-center mx-auto px-[16px] mb-16"
-            style={{ maxWidth: "1000px" }}
-          >
-            <a
-              href="/carta_vini_01_2024.pdf"
-              target="_blank"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              <StrikeThrough
-                fontSize="20px"
-                textTransform="uppercase"
-                linetheme="highlight"
-                matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
-              >
-                <span>Carta Vini</span>
-              </StrikeThrough>
-            </a>
-          </div>
-          <img
+          {/* <img
             src="entrata.jpg"
             alt="welcome"
             className="mx-auto w-full md:w-4/6 mb-8"
-          />
+          /> */}
           <div
             className="flex flex-col items-center justify-center px-[16px] mb-8 mx-auto"
             style={{ maxWidth: "1000px" }}
