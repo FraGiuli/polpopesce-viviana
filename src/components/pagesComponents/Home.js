@@ -181,11 +181,11 @@ export default function Home() {
               </Text>
             </div>
           </div>
-          {/* <img
-            src="entrata.jpg"
+          <img
+            src="interno-locale.jpg"
             alt="welcome"
             className="mx-auto w-full md:w-4/6 mb-8"
-          /> */}
+          />
           <div
             className="flex flex-col items-center justify-center px-[16px] mb-8 mx-auto"
             style={{ maxWidth: "1000px" }}
