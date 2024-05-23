@@ -260,6 +260,8 @@ export default function Home() {
               <br></br>
               Si accettano prenotazioni solo per il pranzo e la cena (non per
               l’aperitivo).
+              <br></br>
+              <strong>Chiusi dal 12 al 26 agosto compresi</strong>
             </Text>
             <a
               // onClick={handler}
