@@ -261,7 +261,7 @@ export default function Home() {
               Si accettano prenotazioni solo per il pranzo e la cena (non per
               l’aperitivo).
               <br></br>
-              <strong>Chiusi dal 12 al 26 agosto compresi</strong>
+              <strong>Chiusi dal 5 al 26 agosto compresi</strong>
             </Text>
             <a
               // onClick={handler}
