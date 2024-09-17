@@ -18,7 +18,6 @@ export default function Footer() {
             className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe text-white hover:text-yellow-100"
             title="Privacy Policy"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Privacy Policy
           </a>
@@ -30,36 +29,11 @@ export default function Footer() {
             className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe text-white hover:text-yellow-100"
             title="Cookie Policy"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Cookie Policy
           </a>
         </div>
       </div>
-
-      {/* Caricamento dello script di Iubenda */}
-      <Script
-        id="iubenda-cookie-policy-script"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function (w,d) {
-              var loader = function () {
-                var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0];
-                s.src="https://cdn.iubenda.com/iubenda.js";
-                tag.parentNode.insertBefore(s,tag);
-              };
-              if(w.addEventListener){
-                w.addEventListener("load", loader, false);
-              } else if(w.attachEvent) {
-                w.attachEvent("onload", loader);
-              } else {
-                w.onload = loader;
-              }
-            })(window, document);
-          `,
-        }}
-      />
     </div>
   );
 }
