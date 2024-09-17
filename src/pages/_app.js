@@ -36,11 +36,16 @@ export default function App({ Component, pageProps }) {
           src="https://cs.iubenda.com/autoblocking/3761588.js"
         />
 
+        {/* Script di supporto di Iubenda */}
+        <Script
+          strategy="beforeInteractive"
+          src="https://cdn.iubenda.com/cs/gpp/stub.js"
+        />
+
         {/* Script principale Iubenda */}
         <Script
           strategy="beforeInteractive"
           src="https://cdn.iubenda.com/cs/iubenda_cs.js"
-          charSet="UTF-8"
           async
         />
 
