@@ -11,11 +11,11 @@ export default function Footer() {
         <Text textAlign="center" color="white">
           © 2023 ALICETTE S.R.L. P.IVA 08390270968
         </Text>
-        <div className="flex gap-1">
+        <div className="flex gap-1 ">
           {/* Link alla Privacy Policy */}
           <a
             href="https://www.iubenda.com/privacy-policy/39911099"
-            className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe text-white hover:text-slate-300"
+            className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe text-white hover:text-yellow-100"
             title="Privacy Policy"
             target="_blank"
             rel="noopener noreferrer"
@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Link alla Cookie Policy */}
           <a
             href="https://www.iubenda.com/privacy-policy/39911099/cookie-policy"
-            className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe text-white hover:text-slate-300"
+            className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe text-white hover:text-yellow-100"
             title="Cookie Policy"
             target="_blank"
             rel="noopener noreferrer"
