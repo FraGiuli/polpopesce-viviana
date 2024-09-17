@@ -36,19 +36,22 @@ export default function App({ Component, pageProps }) {
           src="https://cs.iubenda.com/autoblocking/3761588.js"
         />
 
-        {/* Script di supporto di Iubenda */}
+        {/* Script di supporto TCF di Iubenda */}
         <Script
           strategy="beforeInteractive"
-          src="https://cdn.iubenda.com/cs/gpp/stub.js"
+          src="//cdn.iubenda.com/cs/tcf/stub-v2.js"
+        />
+        <Script
+          strategy="beforeInteractive"
+          src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js"
         />
 
         {/* Script principale Iubenda */}
         <Script
           strategy="beforeInteractive"
-          src="https://cdn.iubenda.com/cs/iubenda_cs.js"
+          src="//cdn.iubenda.com/cs/iubenda_cs.js"
           async
         />
-
         {/* Il resto della tua app */}
         <Component {...pageProps} />
       </NextUIProvider>
