@@ -80,7 +80,7 @@ export default function Home() {
                   </StrikeThrough>
                 </a>
                 <a
-                  href="/polpo-menu-09-07.pdf"
+                  href="/menu-polpo-ottobre.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
