@@ -80,7 +80,7 @@ export default function Home() {
                   </StrikeThrough>
                 </a>
                 <a
-                  href="/menu-polpo-ottobre.pdf"
+                  href="/menu_11_24.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
@@ -250,18 +250,15 @@ export default function Home() {
               info@polpopesce.it
             </Text>
             <Text lineHeight="1.4" marginBottom="20px" textAlign="center">
-              Aperto dal martedì al venerdì dalle{" "}
-              <strong>18.00 alle 24.00</strong>
-              <br></br>
-              Sabato e domenica dalle <strong> 12.00 alle 15.00 </strong>e dalle{" "}
-              <strong> 19.00 alle 24.00</strong>
-              <br></br>Chiuso il lunedì
+              Aperto dal lunedì al venerdì dalle{" "}
+              <strong>12:00 alle 15:00 e dalle 18:00 alle 24:00</strong>.
+              <br></br>Sabato e domenica dalle{" "}
+              <strong>12:00 alle 15:00 e dalle 19:00 alle 24:00</strong>.
               <br></br>
               <br></br>
               Si accettano prenotazioni solo per il pranzo e la cena (non per
               l’aperitivo).
               <br></br>
-              <strong>Chiusi dal 5 al 26 agosto compresi</strong>
             </Text>
             <a
               // onClick={handler}
