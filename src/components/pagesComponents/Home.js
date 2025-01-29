@@ -65,7 +65,7 @@ export default function Home() {
                 style={{ maxWidth: "1000px" }}
               >
                 <a
-                  href="/POLPO_MENU_TAPAS_web.pdf"
+                  href="/tapas-01.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
