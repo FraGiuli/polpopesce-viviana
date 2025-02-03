@@ -281,10 +281,10 @@ export default function Home() {
               info@polpopesce.it
             </Text>
             <Text lineHeight="1.4" marginBottom="20px" textAlign="center">
-              Aperto dal lunedì al venerdì dalle{" "}
+              Aperto dal martedì al sabato dalle{" "}
               <strong>12:00 alle 15:00 e dalle 18:00 alle 24:00</strong>.
-              <br></br>Sabato e domenica dalle{" "}
-              <strong>12:00 alle 15:00 e dalle 19:00 alle 24:00</strong>.
+              <br></br>Domenica dalle <strong>12:00 alle 15:00 </strong>.
+              <br></br>Domenica sera e Lunedì chiuso.
               <br></br>
               <br></br>
               Si accettano prenotazioni solo per il pranzo e la cena (non per
