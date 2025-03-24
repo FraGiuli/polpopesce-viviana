@@ -95,7 +95,7 @@ export default function Home() {
                   </StrikeThrough>
                 </a>
                 <a
-                  href="/menu-trattoria-01.pdf"
+                  href="/menu-trattoria-03.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
