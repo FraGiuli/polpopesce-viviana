@@ -65,7 +65,7 @@ export default function Home() {
                 style={{ maxWidth: "1000px" }}
               >
                 <a
-                  href="/tapas-01.pdf"
+                  href="/tapas-03.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
@@ -80,7 +80,7 @@ export default function Home() {
                   </StrikeThrough>
                 </a>
                 <a
-                  href="/menu-pranzo-01.pdf"
+                  href="/pranzo-03.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
@@ -92,6 +92,21 @@ export default function Home() {
                     matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
                   >
                     <span>Menu Pranzo</span>
+                  </StrikeThrough>
+                </a>
+                <a
+                  href="/sera-03.pdf"
+                  target="_blank"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
+                  <StrikeThrough
+                    fontSize="20px"
+                    textTransform="uppercase"
+                    linetheme="highlight"
+                    matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
+                  >
+                    <span>Menu Cena</span>
                   </StrikeThrough>
                 </a>
                 <a
