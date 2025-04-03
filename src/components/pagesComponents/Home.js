@@ -65,7 +65,7 @@ export default function Home() {
                 style={{ maxWidth: "1000px" }}
               >
                 <a
-                  href="/tapas-03.pdf"
+                  href="/tapas-04-25.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
@@ -79,7 +79,7 @@ export default function Home() {
                     <span>Tapas Menu</span>
                   </StrikeThrough>
                 </a>
-                <a
+                {/* <a
                   href="/pranzo-03.pdf"
                   target="_blank"
                   data-aos="fade-down"
@@ -108,9 +108,9 @@ export default function Home() {
                   >
                     <span>Menu Cena</span>
                   </StrikeThrough>
-                </a>
+                </a> */}
                 <a
-                  href="/menu-trattoria-03.pdf"
+                  href="/trattoria_04-25.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
@@ -296,8 +296,10 @@ export default function Home() {
               info@polpopesce.it
             </Text>
             <Text lineHeight="1.4" marginBottom="20px" textAlign="center">
-              Aperto dal martedì al sabato dalle{" "}
-              <strong>12:00 alle 15:00 e dalle 18:00 alle 24:00</strong>.
+              Aperto dal martedì al venerdì dalle{" "}
+              <strong>dalle 18:00 alle 24:00</strong>.<br></br>Sabato dalle{" "}
+              <strong>12:00 alle 15:00 </strong>e
+              <strong>dalle 19:00 alle 24:00</strong>..
               <br></br>Domenica dalle <strong>12:00 alle 15:00 </strong>.
               <br></br>Domenica sera e Lunedì chiuso.
               <br></br>
