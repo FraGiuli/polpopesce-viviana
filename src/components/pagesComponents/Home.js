@@ -298,7 +298,7 @@ export default function Home() {
             <Text lineHeight="1.4" marginBottom="20px" textAlign="center">
               Aperto dal martedì al venerdì dalle{" "}
               <strong>dalle 18:00 alle 24:00</strong>.<br></br>Sabato dalle{" "}
-              <strong>12:00 alle 15:00 </strong>e
+              <strong>12:00 alle 15:00 </strong>e{" "}
               <strong>dalle 19:00 alle 24:00</strong>..
               <br></br>Domenica dalle <strong>12:00 alle 15:00 </strong>.
               <br></br>Domenica sera e Lunedì chiuso.
