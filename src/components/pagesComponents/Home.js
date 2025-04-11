@@ -64,7 +64,7 @@ export default function Home() {
                 className="flex gap-[20px] flex-col md:flex-row items-center justify-center mx-auto px-[16px] mb-8"
                 style={{ maxWidth: "1000px" }}
               >
-                <a
+                {/* <a
                   href="/tapas-04-25.pdf"
                   target="_blank"
                   data-aos="fade-down"
@@ -78,7 +78,7 @@ export default function Home() {
                   >
                     <span>Tapas Menu</span>
                   </StrikeThrough>
-                </a>
+                </a> */}
                 {/* <a
                   href="/pranzo-03.pdf"
                   target="_blank"
@@ -110,7 +110,7 @@ export default function Home() {
                   </StrikeThrough>
                 </a> */}
                 <a
-                  href="/trattoria_04-25.pdf"
+                  href="/menu-totale-11-04.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
