@@ -93,9 +93,9 @@ export default function Home() {
                   >
                     <span>Menu Pranzo</span>
                   </StrikeThrough>
-                </a>
+                </a> */}
                 <a
-                  href="/sera-03.pdf"
+                  href="/vini-06-2025.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
@@ -106,11 +106,11 @@ export default function Home() {
                     linetheme="highlight"
                     matrixValue="-1.02, -0.04, -0.01, 1, 0, 0"
                   >
-                    <span>Menu Cena</span>
+                    <span>Carta dei vini</span>
                   </StrikeThrough>
-                </a> */}
+                </a>
                 <a
-                  href="/menu-trattoria-05-25.pdf"
+                  href="/trattoria-06-25.pdf"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
@@ -128,7 +128,7 @@ export default function Home() {
               <div className="text-center mb-16">
                 <a
                   // onClick={handler}
-                  href="https://polposemplicementepesce.superbexperience.com/"
+                  href="https://widget.thefork.com/7fd41234-91ea-4cb9-8197-9129e6614c18"
                   target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1000"
